@@ -30,12 +30,12 @@ question_turn="player_1";
 answer_turn="player_2";
 
 function check(){
-    get_answer=document.getElementById("answerbox");
+    get_answer=document.getElementById("input_check_box").value;
     if(get_answer== actual_answer)
     {
         if(answer_turn=="player_1")
         {
-            player1_score=player1_score+1
+            player1_score=player1_score+1;
             document.getElementById("player1score").innerHTML= player1_score;
         }
         else
